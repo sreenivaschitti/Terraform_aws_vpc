@@ -25,7 +25,7 @@ igw_final_tags = merge(
 
           Name = "${var.project} - ${var.environment}"
         },
-        var.igw__tags
+        var.igw_tags
 )
 
 
