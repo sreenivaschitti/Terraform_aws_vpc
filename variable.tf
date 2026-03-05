@@ -35,3 +35,45 @@ variable "public_subnet_tags"{
 type = map
     default = {}
 }
+
+variable "private_subnet_cidr"{
+    type = list
+
+    default = ["10.0.11.0/24" , "10.0.12.0/24"]
+
+}
+variable "private_subnet_tags"{
+type = map
+    default = {}
+}
+
+variable "database_subnet_cidr"{
+    type = list
+
+    default = ["10.0.11.0/24" , "10.0.12.0/24"]
+
+}
+variable "database_subnet_tags"{
+type = map
+    default = {}
+}
+
+variable "route_table_public_tags" {
+
+    type = map
+    default = {}
+  
+}
+
+variable "route_table_private_tags" {
+
+    type = map
+    default = {}
+  
+}
+variable "route_table_database_tags" {
+
+    type = map
+    default = {}
+  
+}

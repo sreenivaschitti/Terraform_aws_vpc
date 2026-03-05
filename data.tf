@@ -3,9 +3,3 @@ state = "available"
 
 }
 
-output "azs_info" {
-
-    value = data.aws_availability_zones.available
-
-
-}
