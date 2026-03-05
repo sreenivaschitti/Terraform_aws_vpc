@@ -77,3 +77,17 @@ variable "route_table_database_tags" {
     default = {}
   
 }
+
+variable "eip_nat_tags" {
+
+    type = map
+    default = {}
+  
+}
+
+variable "eip_natgateway_tags" {
+
+    type = map
+    default = {}
+  
+}
