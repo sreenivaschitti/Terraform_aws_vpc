@@ -131,9 +131,9 @@ resource "aws_route" "public" {
 
 
 resource "aws_eip" "main" {
-  domain                    = "vpc"
+        domain                    = "vpc"
   
-tags = merge(
+    tags = merge(
 
     local.common_tags,
     {
@@ -158,7 +158,7 @@ resource "aws_nat_gateway" "main" {
     },
 
     var.eip_natgateway_tags
-) 
+    ) 
 
   # To ensure proper ordering, it is recommended to add an explicit dependency
   # on the Internet Gateway for the VPC.
@@ -195,5 +195,4 @@ resource "aws_route_table_association" "database" {
   route_table_id = aws_route_table.database.id
 }
 
-}
 
