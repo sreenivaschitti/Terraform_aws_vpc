@@ -4,3 +4,10 @@ output "azs_info" {
 
 
 }
+
+output "eip_info" {
+
+    value = aws_eip.main.id
+
+
+}
