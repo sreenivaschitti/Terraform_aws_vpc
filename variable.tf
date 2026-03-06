@@ -94,10 +94,6 @@ variable "eip_natgateway_tags" {
 
 
 variable "is_peering_required" {
-  
-default = false
-
-type = bool
-
-
+    default = false
+    type = bool
 }
