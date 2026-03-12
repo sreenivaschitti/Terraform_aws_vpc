@@ -6,19 +6,15 @@ variable "vpc_cidr" {
   
 }
 
-variable "environment" {
+variable "project"{
+    type = string
+    default = "roboshop"
+    }
 
-type = string
-
-  
-}
-
-variable "project" {
-
-type = string
-
-  
-}
+variable "environment"{
+    type = string
+    default = "dev"
+    }
 
 variable "vpc_tags" {
 
