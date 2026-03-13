@@ -27,4 +27,12 @@ igw_final_tags = merge(
             var.igw_tags
   )
 
+pubic_cidr_final_tas = merge(
+
+            local.common_tags,{
+            Name = "${var.project}-${var.environment}"
+            },
+            var.public_cidr_tags
+  )
+
 }
