@@ -29,10 +29,7 @@ igw_final_tags = merge(
 
 pubic_subnet_cidr_final_tas = merge(
 
-            local.common_tags,{
-            Name = "${var.project}-${var.environment}"
-            },
-            var.public_subnet_cidr_tags
+           
   )
 
 az_names = slice(data.aws_availability_zones.available.names, 0, 2)
